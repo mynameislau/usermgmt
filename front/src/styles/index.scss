@@ -1,0 +1,82 @@
+@import "./variables.scss";
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  color: $bodyColor;
+}
+
+.btn {
+  appearance: none;
+  border: 0;
+  padding: 8px 10px;
+  font-weight: 700;
+  background-color: $primary;
+  color: white;
+  cursor: pointer;
+
+  animation: fadeIn 0.5s;
+}
+
+.btn.btn--trsp {
+  background-color: transparent;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#root {
+  height: 100%;
+}
+
+.big-spacer {
+  padding: 50px;
+}
+
+.custom-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+
+.custom-checkbox + label {
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border: 1px solid currentColor;
+    border-radius: 2px;
+  }
+}
+
+.custom-checkbox:checked + label::after {
+  content: "✓";
+  position: absolute;
+  font-size: 1.1em;
+  margin-left: -0.9em;
+  color: #00e79e;
+  margin-top: -0.1em;
+  font-weight: 900;
+  animation: fadeIn 0.5s;
+}

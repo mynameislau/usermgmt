@@ -1,0 +1,17 @@
+@import "../../styles/variables";
+
+.userName {
+  margin-left: 20px;
+}
+
+.avatar {
+  margin-left: 20px;
+  background-color: $primary;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 2em;
+  height: 2em;
+  color: white;
+}

@@ -1,0 +1,14 @@
+@import '../../styles/variables';
+
+.contentWrapper {
+  background-color: white;
+  // padding: 30px;
+  max-width: 80vw;
+  min-width: 60vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 14px 0px #0000000d;
+  color: $bodyColor;
+  animation: fadeIn 0.5s;
+}

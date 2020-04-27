@@ -1,0 +1,24 @@
+@import '../../styles/variables';
+
+.grid {
+  background-color: $secondary;
+  height: 100%;
+  display: grid;
+
+  grid-template-rows: auto 1fr;
+}
+
+.header {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  font-weight: 900;
+  color: #29b6f6;
+}
+
+.main {
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
